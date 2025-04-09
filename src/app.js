@@ -9,4 +9,4 @@ app.set("port",5000)
 /*Routes     */
 app.use("/api/categorias",categoriaRoutes)
 
-export default app;
+export default app; 
