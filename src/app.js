@@ -5,9 +5,11 @@ import categoriaRoutes from "./routes/categorias.routes.js"
 
 const app = express();
 
+app.use(express.json());//MIDLEWARE
+
 app.set("port",5000)
 
-app.use(cors())  
+app.use(cors())  ;  
 /*Routes     */
 app.use("/api/categorias",categoriaRoutes)
 
