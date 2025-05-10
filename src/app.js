@@ -18,5 +18,9 @@ app.use("/api/empleados",empleadoRoutes)
 app.use("/api/clientes",clienteRoutes)
 app.use("/api/productos",productoRoutes)
 
+app.get("/", (req,res)=>{
+    res.send("Rest API en RENDER Without database endpoints")
+})
+
 
 export default app;     
